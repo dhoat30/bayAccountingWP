@@ -1,0 +1,103 @@
+/* top banner */
+.cart-popup-container .top-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px;
+}
+.cart-popup-container .close-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.cart-popup-container .close-button-container i {
+  position: static !important;
+  color: white !important;
+  font-size: 16px;
+}
+.cart-popup-container .close-button-container i:hover {
+  transform: scale(1) !important;
+  color: white !important;
+}
+/* cart popup  */
+
+.cart-popup-container {
+  display: none;
+  flex-direction: column;
+  max-width: 400px;
+  min-width: 270px;
+  width: 100%;
+  height: 400px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow: scroll;
+  padding: 0 0;
+  z-index: 2000;
+  background: white;
+}
+.cart-popup-container .flex-card .fa-times {
+  position: static !important;
+  font-size: 20px;
+}
+.cart-popup-container .flex-card .fa-times:hover {
+  font-size: 20px;
+}
+
+.cart-popup-container .product-card:nth-child(even) {
+  background: rgb(240, 240, 240) !important;
+}
+.cart-popup-container .product-card {
+  padding: 10px 10px;
+}
+.cart-popup-container .product-card a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cart-popup-container .product-card .img-container {
+  width: 70px;
+}
+.cart-popup-container .product-card .title-container {
+  width: 190px;
+}
+.cart-popup-container .product-card .price-container {
+  width: 70px;
+}
+.cart-popup-container img {
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/*buttons */
+.pop-up-footer {
+  width: 100% !important;
+  margin: 10px auto 0 auto;
+}
+.cart-popup-container .total-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cart-popup-container .total-container > div {
+  width: 40%;
+  margin: 10px 10px 10px 0;
+}
+.cart-popup-container .total-container .total {
+  text-align: right;
+  width: 100%;
+}
+
+.cart-popup-container .cont-shopping {
+  margin: 10px auto 10px auto;
+  width: 95%;
+}
+.cart-popup-container .checkout-btn {
+  margin: 10px auto 10px auto;
+  width: 95%;
+}
